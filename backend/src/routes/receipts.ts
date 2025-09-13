@@ -49,11 +49,8 @@ router.post('/ocr', authenticateToken, logOperation('OCR识别', '收据'), uplo
   try {
     const ocrService = OCRService.getInstance();
     
-    // 预处理图片（如果需要）
-    const processedImagePath = await ocrService.preprocessImage(req.file.path);
-    
     // 进行OCR识别
-    const ocrResult = await ocrService.recognizeReceipt(processedImagePath);
+    const ocrResult = await ocrService.recognizeReceipt(req.file.path);
     
     res.json({
       imagePath: req.file.filename,

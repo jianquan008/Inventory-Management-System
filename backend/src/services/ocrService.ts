@@ -33,13 +33,25 @@ export class OCRService {
    */
   public async recognizeReceipt(imagePath: string): Promise<OCRResult> {
     try {
-      // 使用Tesseract进行OCR识别，支持中英文
+      // 使用优化的Tesseract配置提高识别率
       const { data } = await Tesseract.recognize(imagePath, 'chi_sim+eng', {
-        logger: m => console.log(m) // 可选：显示识别进度
+        logger: m => console.log(m)
       });
 
       const text = data.text;
-      const confidence = data.confidence;
+      let confidence = data.confidence;
+
+      // 如果置信度太低，尝试不同的识别模式
+      if (confidence < 60) {
+        console.log('置信度较低，尝试其他识别模式...');
+        const { data: data2 } = await Tesseract.recognize(imagePath, 'chi_sim+eng', {
+          logger: m => console.log(m)
+        });
+        
+        if (data2.confidence > confidence) {
+          confidence = data2.confidence;
+        }
+      }
 
       // 解析识别出的文本
       const items = this.parseReceiptText(text);
@@ -55,18 +67,6 @@ export class OCRService {
       console.error('OCR识别失败:', error);
       throw new Error('OCR识别失败');
     }
-  }
-
-  /**
-   * 预处理图片以提高OCR准确率
-   */
-  public async preprocessImage(inputPath: string): Promise<string> {
-    // 这里可以添加图片预处理逻辑，如：
-    // - 调整对比度和亮度
-    // - 去噪
-    // - 倾斜校正
-    // 目前先返回原始路径
-    return inputPath;
   }
 
   /**
@@ -98,9 +98,12 @@ export class OCRService {
    * 从单行或多行中提取商品信息
    */
   private extractItemFromLine(line: string, allLines: string[], currentIndex: number): ReceiptItem | null {
-    // 模式1: 商品名 单价 数量 总价 (一行包含所有信息)
+    // 清理行内容
+    const cleanLine = line.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\s¥.,()（）-]/g, ' ').trim();
+    
+    // 模式1: 商品名 单价 数量 总价
     const pattern1 = /(.+?)\s+(\d+(?:\.\d+)?)\s+(\d+)\s+(\d+(?:\.\d+)?)/;
-    const match1 = line.match(pattern1);
+    const match1 = cleanLine.match(pattern1);
     if (match1) {
       const name = match1[1].trim();
       const unitPrice = parseFloat(match1[2]);
@@ -112,17 +115,24 @@ export class OCRService {
       }
     }
 
-    // 模式2: 商品名和价格在同一行
-    const pattern2 = /(.+?)\s+(\d+(?:\.\d+)?)/;
-    const match2 = line.match(pattern2);
+    // 模式2: 商品名 价格 (可能包含¥符号)
+    const pattern2 = /(.+?)\s*¥?\s*(\d+(?:\.\d+)?)/;
+    const match2 = cleanLine.match(pattern2);
     if (match2) {
       const name = match2[1].trim();
       const price = parseFloat(match2[2]);
       
-      // 检查下一行是否有数量信息
+      // 检查前后行是否有数量信息
+      let quantity = 1;
+      const prevLine = currentIndex > 0 ? allLines[currentIndex - 1].trim() : '';
       const nextLine = currentIndex + 1 < allLines.length ? allLines[currentIndex + 1].trim() : '';
-      const quantityMatch = nextLine.match(/(?:数量|qty|x)\s*(\d+)/i);
-      const quantity = quantityMatch ? parseInt(quantityMatch[1]) : 1;
+      
+      const quantityPattern = /(?:数量|qty|x|×)\s*(\d+)/i;
+      const prevQty = prevLine.match(quantityPattern);
+      const nextQty = nextLine.match(quantityPattern);
+      
+      if (prevQty) quantity = parseInt(prevQty[1]);
+      else if (nextQty) quantity = parseInt(nextQty[1]);
       
       if (this.isValidItem(name, price, quantity, price * quantity)) {
         return {
@@ -134,20 +144,23 @@ export class OCRService {
       }
     }
 
-    // 模式3: 只有商品名和总价
-    const pattern3 = /(.+?)\s+¥?(\d+(?:\.\d+)?)/;
-    const match3 = line.match(pattern3);
-    if (match3) {
-      const name = match3[1].trim();
-      const totalPrice = parseFloat(match3[2]);
+    // 模式3: 多行商品信息
+    if (currentIndex + 1 < allLines.length) {
+      const nextLine = allLines[currentIndex + 1].trim();
+      const priceMatch = nextLine.match(/¥?(\d+(?:\.\d+)?)/);
       
-      if (this.isValidItem(name, totalPrice, 1, totalPrice)) {
-        return {
-          name,
-          unitPrice: totalPrice,
-          quantity: 1,
-          totalPrice
-        };
+      if (priceMatch && this.couldBeProductName(cleanLine)) {
+        const name = cleanLine;
+        const price = parseFloat(priceMatch[1]);
+        
+        if (this.isValidItem(name, price, 1, price)) {
+          return {
+            name,
+            unitPrice: price,
+            quantity: 1,
+            totalPrice: price
+          };
+        }
       }
     }
 
@@ -155,21 +168,37 @@ export class OCRService {
   }
 
   /**
+   * 判断文本是否可能是商品名
+   */
+  private couldBeProductName(text: string): boolean {
+    // 商品名通常包含中文或英文字母
+    const hasValidChars = /[\u4e00-\u9fa5a-zA-Z]/.test(text);
+    // 长度合理
+    const reasonableLength = text.length >= 2 && text.length <= 50;
+    // 不是纯数字
+    const notOnlyNumbers = !/^\d+$/.test(text);
+    
+    return hasValidChars && reasonableLength && notOnlyNumbers;
+  }
+
+  /**
    * 判断是否为非商品行
    */
   private isNonItemLine(line: string): boolean {
     const nonItemPatterns = [
-      /^(收据|发票|小票|receipt)/i,
-      /^(店名|商店|超市)/i,
-      /^(地址|电话|tel)/i,
+      /^(收据|发票|小票|receipt|购物清单)/i,
+      /^(店名|商店|超市|便利店)/i,
+      /^(地址|电话|tel|phone)/i,
       /^(日期|时间|date|time)/i,
-      /^(收银员|cashier)/i,
-      /^(合计|总计|小计|total|subtotal)/i,
-      /^(找零|change)/i,
-      /^(谢谢|thank)/i,
-      /^[-=*]{3,}/,
-      /^\d{4}-\d{2}-\d{2}/,
-      /^\d{2}:\d{2}/
+      /^(收银员|cashier|营业员)/i,
+      /^(合计|总计|小计|total|subtotal|应收|实收)/i,
+      /^(找零|change|零钱)/i,
+      /^(谢谢|thank|欢迎|welcome)/i,
+      /^[-=*_]{3,}/,
+      /^\d{4}[-/]\d{2}[-/]\d{2}/,
+      /^\d{2}:\d{2}/,
+      /^(会员|member|vip)/i,
+      /^(积分|point)/i
     ];
 
     return nonItemPatterns.some(pattern => pattern.test(line));
@@ -189,15 +218,20 @@ export class OCRService {
       return false;
     }
 
+    // 价格不能过高（防止识别错误）
+    if (unitPrice > 10000 || totalPrice > 100000) {
+      return false;
+    }
+
     // 检查总价是否合理（允许一定的误差）
     const expectedTotal = unitPrice * quantity;
-    const tolerance = 0.01; // 1分的误差
+    const tolerance = Math.max(0.01, expectedTotal * 0.05); // 5%的误差或1分
     if (Math.abs(totalPrice - expectedTotal) > tolerance) {
       return false;
     }
 
     // 过滤明显不是商品的文本
-    const invalidNames = ['小计', '合计', '总计', '找零', '收款', '应收'];
+    const invalidNames = ['小计', '合计', '总计', '找零', '收款', '应收', '实收', '优惠', '折扣'];
     if (invalidNames.some(invalid => name.includes(invalid))) {
       return false;
     }
@@ -214,14 +248,19 @@ export class OCRService {
     // 查找包含总计的行
     for (const line of lines) {
       const totalPatterns = [
-        /(?:合计|总计|total|应收)\s*:?\s*¥?(\d+(?:\.\d+)?)/i,
-        /¥(\d+(?:\.\d+)?)\s*(?:合计|总计|total)/i
+        /(?:合计|总计|total|应收|实收)\s*:?\s*¥?(\d+(?:\.\d+)?)/i,
+        /¥(\d+(?:\.\d+)?)\s*(?:合计|总计|total)/i,
+        /(?:总额|金额)\s*:?\s*¥?(\d+(?:\.\d+)?)/i
       ];
 
       for (const pattern of totalPatterns) {
         const match = line.match(pattern);
         if (match) {
-          return parseFloat(match[1]);
+          const amount = parseFloat(match[1]);
+          // 验证总额是否合理
+          if (amount > 0 && amount < 100000) {
+            return amount;
+          }
         }
       }
     }

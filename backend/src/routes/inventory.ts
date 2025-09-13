@@ -15,8 +15,8 @@ router.get('/list', authenticateToken, logOperation('查看', '库存列表'), (
   
   // 搜索过滤
   if (search) {
-    whereClause += ' AND item_name LIKE ?';
-    params.push(`%${search}%`);
+    whereClause += ' AND (item_name LIKE ? OR description LIKE ?)';
+    params.push(`%${search}%`, `%${search}%`);
   }
   
   // 低库存过滤
@@ -66,7 +66,7 @@ router.get('/list', authenticateToken, logOperation('查看', '库存列表'), (
 
 // 添加库存项目 (仅管理员)
 router.post('/add', authenticateToken, requireAdmin, logOperation('添加', '库存项目'), (req: AuthRequest, res) => {
-  const { item_name, current_stock, unit_price } = req.body;
+  const { item_name, description, current_stock, unit_price } = req.body;
   
   if (!item_name || current_stock < 0 || unit_price < 0) {
     return res.status(400).json({ error: '请提供有效的商品信息' });
@@ -75,8 +75,8 @@ router.post('/add', authenticateToken, requireAdmin, logOperation('添加', '库
   const db = getDatabase();
   
   db.run(
-    'INSERT INTO inventory (item_name, current_stock, unit_price) VALUES (?, ?, ?)',
-    [item_name.trim(), current_stock, unit_price],
+    'INSERT INTO inventory (item_name, description, current_stock, unit_price) VALUES (?, ?, ?, ?)',
+    [item_name.trim(), description?.trim() || null, current_stock, unit_price],
     function(err) {
       db.close();
       if (err) {
@@ -97,16 +97,19 @@ router.post('/add', authenticateToken, requireAdmin, logOperation('添加', '库
 // 更新库存 (仅管理员)
 router.put('/:id', authenticateToken, requireAdmin, logOperation('更新', '库存'), (req: AuthRequest, res) => {
   const { id } = req.params;
-  const { current_stock, unit_price } = req.body;
+  const { item_name, description, current_stock, unit_price } = req.body;
   
   const db = getDatabase();
   
   db.run(
-    'UPDATE inventory SET current_stock = ?, unit_price = ?, last_updated = CURRENT_TIMESTAMP WHERE id = ?',
-    [current_stock, unit_price, id],
+    'UPDATE inventory SET item_name = ?, description = ?, current_stock = ?, unit_price = ?, last_updated = CURRENT_TIMESTAMP WHERE id = ?',
+    [item_name?.trim(), description?.trim() || null, current_stock, unit_price, id],
     function(err) {
       db.close();
       if (err) {
+        if (err.message.includes('UNIQUE constraint failed')) {
+          return res.status(400).json({ error: '商品名称已存在' });
+        }
         return res.status(500).json({ error: '更新库存失败' });
       }
       
