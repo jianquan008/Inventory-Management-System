@@ -1,0 +1,1691 @@
+
+> daigou-backend@1.0.0 start
+> node dist/server.js
+
+默认管理员账户已创建 (用户名: admin, 密码: password)
+数据库初始化完成
+服务器运行在端口 3001
+环境: development
+自动备份已启动，间隔: 24 小时
+系统监控已启动，检查间隔: 5 分钟
+系统服务启动完成
+数据库备份完成: backups/backup_2025-09-13T13-22-04-608Z.sql
+GET /api/health - 200 - 1ms
+GET /api/receipts/stats - 403 - 1ms
+{
+  status: 'loading tesseract core',
+  progress: 0,
+  userJobId: 'Job-0-81b5e'
+}
+{
+  status: 'loading tesseract core',
+  progress: 1,
+  userJobId: 'Job-0-81b5e'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'initializing tesseract',
+  progress: 0,
+  userJobId: 'Job-0-81b5e'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'initializing tesseract',
+  progress: 1,
+  userJobId: 'Job-0-81b5e'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'loading language traineddata',
+  progress: 0,
+  userJobId: 'Job-1-f2d29'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'loading language traineddata',
+  progress: 0.25,
+  userJobId: 'Job-1-f2d29'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'loading language traineddata',
+  progress: 0.5,
+  userJobId: 'Job-1-f2d29'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'loading language traineddata',
+  progress: 0.75,
+  userJobId: 'Job-1-f2d29'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'loading language traineddata',
+  progress: 1,
+  userJobId: 'Job-1-f2d29'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'initializing api',
+  progress: 0,
+  userJobId: 'Job-2-3d308'
+}
+{
+  workerId: 'Worker-0-1843b',
+  status: 'initializing api',
+  progress: 1,
+  userJobId: 'Job-2-3d308'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.014285714285714285,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.014285714285714285,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.02857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.04285714285714286,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.04285714285714286,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.05714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.07142857142857142,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.07142857142857142,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.08571428571428572,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.08571428571428572,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.1,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.11428571428571428,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.11428571428571428,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.12857142857142856,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.14285714285714285,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.14285714285714285,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.15714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.15714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.17142857142857143,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.18571428571428572,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.18571428571428572,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.2,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.21428571428571427,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.21428571428571427,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.22857142857142856,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.22857142857142856,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.24285714285714285,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.2571428571428571,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.2571428571428571,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.2714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.2857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.2857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.3,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.3,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.3142857142857143,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.32857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.32857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.34285714285714286,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.35714285714285715,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.35714285714285715,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.37142857142857144,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.37142857142857144,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.38571428571428573,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.4,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.4,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.4142857142857143,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.42857142857142855,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.42857142857142855,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.44285714285714284,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.44285714285714284,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.45714285714285713,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.4714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.4714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.4857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5142857142857142,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5142857142857142,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5285714285714286,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5428571428571428,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5428571428571428,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5571428571428572,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.5857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6142857142857143,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6142857142857143,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6285714285714286,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6428571428571429,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6428571428571429,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6571428571428571,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6571428571428571,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6714285714285714,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.6857142857142857,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 0.7,
+  userJobId: 'Job-3-1d221'
+}
+{
+  workerId: 'Worker-0-1843b',
+  jobId: 'Job-0-81b5e',
+  status: 'recognizing text',
+  progress: 1,
+  userJobId: 'Job-3-1d221'
+}
+POST /api/receipts/ocr - 200 - 7815ms
+{
+  status: 'loading tesseract core',
+  progress: 0,
+  userJobId: 'Job-4-8e0ae'
+}
+{
+  status: 'loading tesseract core',
+  progress: 1,
+  userJobId: 'Job-4-8e0ae'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'initializing tesseract',
+  progress: 0,
+  userJobId: 'Job-4-8e0ae'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'initializing tesseract',
+  progress: 1,
+  userJobId: 'Job-4-8e0ae'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'loading language traineddata',
+  progress: 0,
+  userJobId: 'Job-5-a6010'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'loading language traineddata',
+  progress: 0.25,
+  userJobId: 'Job-5-a6010'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'loading language traineddata',
+  progress: 0.5,
+  userJobId: 'Job-5-a6010'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'loading language traineddata',
+  progress: 0.75,
+  userJobId: 'Job-5-a6010'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'loading language traineddata',
+  progress: 1,
+  userJobId: 'Job-5-a6010'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'initializing api',
+  progress: 0,
+  userJobId: 'Job-6-7aca0'
+}
+{
+  workerId: 'Worker-1-22738',
+  status: 'initializing api',
+  progress: 1,
+  userJobId: 'Job-6-7aca0'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.014285714285714285,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.02857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.04285714285714286,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.05714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.05714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.07142857142857142,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.08571428571428572,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.1,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.11428571428571428,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.11428571428571428,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.12857142857142856,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.14285714285714285,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.15714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.17142857142857143,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.17142857142857143,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.18571428571428572,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.2,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.21428571428571427,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.22857142857142856,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.22857142857142856,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.24285714285714285,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.2571428571428571,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.2714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.2857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.2857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.3,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.3142857142857143,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.32857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.34285714285714286,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.35714285714285715,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.35714285714285715,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.37142857142857144,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.38571428571428573,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.4,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.4142857142857143,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.4142857142857143,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.42857142857142855,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.44285714285714284,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.45714285714285713,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.4714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.4714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.4857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5142857142857142,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5285714285714286,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5285714285714286,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5428571428571428,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5571428571428572,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.5857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6142857142857143,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6285714285714286,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6428571428571429,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6428571428571429,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6571428571428571,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6714285714285714,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.6857142857142857,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 0.7,
+  userJobId: 'Job-7-ec64e'
+}
+{
+  workerId: 'Worker-1-22738',
+  jobId: 'Job-4-8e0ae',
+  status: 'recognizing text',
+  progress: 1,
+  userJobId: 'Job-7-ec64e'
+}
+POST /api/receipts/ocr - 200 - 5261ms
+系统状态警告: [ '磁盘空间较少' ]
+系统状态警告: [ '磁盘空间较少' ]
+系统状态警告: [ '磁盘空间较少' ]
+系统状态警告: [ '磁盘空间较少' ]
+GET / - 404 - 0ms
+GET /.well-known/security.txt - 404 - 0ms
+系统状态警告: [ '磁盘空间较少' ]
+系统状态警告: [ '磁盘空间较少' ]
+系统状态警告: [ '磁盘空间较少' ]
+{
+  status: 'loading tesseract core',
+  progress: 0,
+  userJobId: 'Job-8-4d3ae'
+}
+{
+  status: 'loading tesseract core',
+  progress: 1,
+  userJobId: 'Job-8-4d3ae'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'initializing tesseract',
+  progress: 0,
+  userJobId: 'Job-8-4d3ae'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'initializing tesseract',
+  progress: 1,
+  userJobId: 'Job-8-4d3ae'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'loading language traineddata',
+  progress: 0,
+  userJobId: 'Job-9-6608e'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'loading language traineddata',
+  progress: 0.25,
+  userJobId: 'Job-9-6608e'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'loading language traineddata',
+  progress: 0.5,
+  userJobId: 'Job-9-6608e'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'loading language traineddata',
+  progress: 0.75,
+  userJobId: 'Job-9-6608e'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'loading language traineddata',
+  progress: 1,
+  userJobId: 'Job-9-6608e'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'initializing api',
+  progress: 0,
+  userJobId: 'Job-10-05ccf'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  status: 'initializing api',
+  progress: 1,
+  userJobId: 'Job-10-05ccf'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.014285714285714285,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.02857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.04285714285714286,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.04285714285714286,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.05714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.07142857142857142,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.08571428571428572,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.08571428571428572,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.1,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.11428571428571428,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.12857142857142856,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.14285714285714285,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.14285714285714285,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.15714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.17142857142857143,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.18571428571428572,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.18571428571428572,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.2,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.21428571428571427,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.22857142857142856,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.22857142857142856,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.24285714285714285,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.2571428571428571,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.2714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.2857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+Image too small to scale!! (2x36 vs min width of 3)
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.2857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.3,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.3142857142857143,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.32857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.32857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.34285714285714286,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.35714285714285715,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.37142857142857144,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.37142857142857144,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.38571428571428573,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.4,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.4142857142857143,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.42857142857142855,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.42857142857142855,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.44285714285714284,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.45714285714285713,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.4714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.4714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.4857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5142857142857142,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5142857142857142,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5285714285714286,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5428571428571428,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5571428571428572,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.5857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6142857142857143,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6142857142857143,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6285714285714286,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6428571428571429,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6571428571428571,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6571428571428571,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6714285714285714,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.6857142857142857,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 0.7,
+  userJobId: 'Job-11-054a2'
+}
+{
+  workerId: 'Worker-2-ecbb9',
+  jobId: 'Job-8-4d3ae',
+  status: 'recognizing text',
+  progress: 1,
+  userJobId: 'Job-11-054a2'
+}
+POST /api/receipts/ocr - 200 - 12226ms
+Line cannot be recognized!!
+系统状态警告: [ '磁盘空间较少' ]

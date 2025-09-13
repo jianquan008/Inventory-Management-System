@@ -1,0 +1,120 @@
+
+> daigou-frontend@1.0.0 start
+> react-scripts start
+
+(node:1171152) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:1171152) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled with warnings.
+
+[eslint] 
+src/App.tsx
+  Line 16:9:  'Content' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/HelpModal.tsx
+  Line 1:17:  'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 5:9:   'Title' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/Layout.tsx
+  Line 33:9:  'Title' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/pages/Dashboard.tsx
+  Line 10:3:  'List' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+  Line 16:3:  'Divider' is defined but never used                                                                                    @typescript-eslint/no-unused-vars
+  Line 90:6:  React Hook useEffect has a missing dependency: 'fetchDashboardData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/History.tsx
+  Line 21:3:    'Divider' is defined but never used                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  Line 22:3:    'Alert' is defined but never used                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  Line 27:3:    'SearchOutlined' is defined but never used                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  Line 97:9:    'Option' is assigned a value but never used                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  Line 123:11:  'isAdmin' is assigned a value but never used                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  Line 128:6:   React Hook useEffect has missing dependencies: 'fetchReceipts' and 'fetchStats'. Either include them or remove the dependency array                                                                                                        react-hooks/exhaustive-deps
+  Line 165:6:   React Hook useCallback has a missing dependency: 'pagination'. Either include it or remove the dependency array. Mutable values like 'pagination.current' aren't valid dependencies because mutating them doesn't re-render the component  react-hooks/exhaustive-deps
+  Line 199:6:   React Hook useEffect has missing dependencies: 'fetchReceipts' and 'fetchStats'. Either include them or remove the dependency array                                                                                                        react-hooks/exhaustive-deps
+
+src/pages/Inventory.tsx
+  Line 10:3:   'message' is defined but never used                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  Line 18:3:   'Select' is defined but never used                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  Line 29:3:   'SearchOutlined' is defined but never used                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  Line 99:6:   React Hook useEffect has a missing dependency: 'fetchInventory'. Either include it or remove the dependency array                                                                                                                          react-hooks/exhaustive-deps
+  Line 128:6:  React Hook useCallback has a missing dependency: 'pagination'. Either include it or remove the dependency array. Mutable values like 'pagination.current' aren't valid dependencies because mutating them doesn't re-render the component  react-hooks/exhaustive-deps
+  Line 149:6:  React Hook useEffect has a missing dependency: 'fetchInventory'. Either include it or remove the dependency array                                                                                                                          react-hooks/exhaustive-deps
+
+src/pages/SystemManagement.tsx
+  Line 9:3:    'Modal' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 14:3:   'Tag' is defined but never used                     @typescript-eslint/no-unused-vars
+  Line 16:3:   'message' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:3:   'BarChartOutlined' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 30:3:   'SettingOutlined' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 96:10:  'healthHistory' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 98:19:  'setLoading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/App.tsx
+  Line 16:9:  'Content' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/HelpModal.tsx
+  Line 1:17:  'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 5:9:   'Title' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/Layout.tsx
+  Line 33:9:  'Title' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/pages/Dashboard.tsx
+  Line 10:3:  'List' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+  Line 16:3:  'Divider' is defined but never used                                                                                    @typescript-eslint/no-unused-vars
+  Line 90:6:  React Hook useEffect has a missing dependency: 'fetchDashboardData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/History.tsx
+  Line 21:3:    'Divider' is defined but never used                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  Line 22:3:    'Alert' is defined but never used                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  Line 27:3:    'SearchOutlined' is defined but never used                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  Line 97:9:    'Option' is assigned a value but never used                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  Line 123:11:  'isAdmin' is assigned a value but never used                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  Line 128:6:   React Hook useEffect has missing dependencies: 'fetchReceipts' and 'fetchStats'. Either include them or remove the dependency array                                                                                                        react-hooks/exhaustive-deps
+  Line 165:6:   React Hook useCallback has a missing dependency: 'pagination'. Either include it or remove the dependency array. Mutable values like 'pagination.current' aren't valid dependencies because mutating them doesn't re-render the component  react-hooks/exhaustive-deps
+  Line 199:6:   React Hook useEffect has missing dependencies: 'fetchReceipts' and 'fetchStats'. Either include them or remove the dependency array                                                                                                        react-hooks/exhaustive-deps
+
+src/pages/Inventory.tsx
+  Line 10:3:   'message' is defined but never used                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  Line 18:3:   'Select' is defined but never used                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  Line 29:3:   'SearchOutlined' is defined but never used                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  Line 99:6:   React Hook useEffect has a missing dependency: 'fetchInventory'. Either include it or remove the dependency array                                                                                                                          react-hooks/exhaustive-deps
+  Line 128:6:  React Hook useCallback has a missing dependency: 'pagination'. Either include it or remove the dependency array. Mutable values like 'pagination.current' aren't valid dependencies because mutating them doesn't re-render the component  react-hooks/exhaustive-deps
+  Line 149:6:  React Hook useEffect has a missing dependency: 'fetchInventory'. Either include it or remove the dependency array                                                                                                                          react-hooks/exhaustive-deps
+
+src/pages/SystemManagement.tsx
+  Line 9:3:    'Modal' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 14:3:   'Tag' is defined but never used                     @typescript-eslint/no-unused-vars
+  Line 16:3:   'message' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 29:3:   'BarChartOutlined' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 30:3:   'SettingOutlined' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 96:10:  'healthHistory' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 98:19:  'setLoading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+webpack compiled with 1 warning
+No issues found.
+Proxy error: Could not proxy request /api/system/logs?limit=10 from 44.219.69.58:3000 to http://localhost:3001.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNRESET).
+
+Proxy error: Could not proxy request /api/inventory/stats from 44.219.69.58:3000 to http://localhost:3001.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /api/receipts/list?limit=1000 from 44.219.69.58:3000 to http://localhost:3001.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /api/receipts/stats from 44.219.69.58:3000 to http://localhost:3001.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /api/system/logs?limit=10 from 44.219.69.58:3000 to http://localhost:3001.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
+Proxy error: Could not proxy request /api/receipts/ocr from 44.219.69.58:3000 to http://localhost:3001.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
+
